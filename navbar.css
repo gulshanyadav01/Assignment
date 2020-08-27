@@ -4,6 +4,17 @@
     box-sizing:border-box;
 }
 
-.navbar{
-    /* display:flex; */
+
+ul{
+    list-style-type: none;
+    display:flex;
+}
+li {
+    display:block;
+}
+
+ a{
+    padding:14px 16px;
+    background:red;
+    text-decoration:none;
 }

@@ -1,38 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>navbar</title>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: green;
+}
 
-        <link rel="stylesheet" href="navbar.css">
-    </head>
-    <body>
-        <div class="navbar">
-            <ul>
-                <a href="#"><li>Home </li></a>
-                <a href="#"><li>Home </li></a>
-                <a href="#"><li>
-                    <div class="drop">
-                        <ul>
-                            <li>Engineering</li>
-                            <li>
-                                Telecom
-                
-                            </li>
-                            <li>Energy</li>
-                            <li>Finance</li>
-                            <li>Consultancy</li>
+li {
+  float: left;
+}
 
-                        </ul>
-                    </div>
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: green;
+}
 
+li.dropdown {
+  display: inline-block;
+}
 
-                </li></a>
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+  z-index: 1;
+}
 
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
 
-                <li>Services </li>
-                <li>Contact</li>
-            </ul>
-        </div>
-    </body>
+.dropdown-content a:hover {
+    color:yellow;
+    background-color: green;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">About</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Product</a>
+    <div class="dropdown-content">
+      <a href="#">Engineering</a>
+      <a href="#">Telecom</a>
+      <a href="#">Energy</a>
+      <a href="#">Finance</a>
+      <a href="#">Consultancy</a>
+      
+    </div>
+  </li>
+  <li><a href="#">Services</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+
+</body>
 </html>
